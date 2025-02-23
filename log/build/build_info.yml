@@ -1,0 +1,56 @@
+cmake:
+  application:
+    configuration-dir: /home/nazanin/zephyrproject/my_project/First_project
+    source-dir: /home/nazanin/zephyrproject/my_project/First_project
+  board:
+    name: nucleo_f401re
+    path:
+     - /home/nazanin/zephyrproject/zephyr/boards/st/nucleo_f401re
+    qualifiers: stm32f401xe
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - /home/nazanin/zephyrproject/zephyr/dts/bindings
+    files:
+     - /home/nazanin/zephyrproject/zephyr/boards/st/nucleo_f401re/nucleo_f401re.dts
+     - /home/nazanin/zephyrproject/my_project/First_project/nucleo_f401re.overlay
+    include-dirs:
+     - /home/nazanin/zephyrproject/modules/hal/atmel/include
+     - /home/nazanin/zephyrproject/modules/hal/gigadevice/include
+     - /home/nazanin/zephyrproject/modules/hal/microchip/include
+     - /home/nazanin/zephyrproject/modules/hal/microchip/dts
+     - /home/nazanin/zephyrproject/modules/hal/nuvoton/dts
+     - /home/nazanin/zephyrproject/modules/hal/nxp/dts
+     - /home/nazanin/zephyrproject/modules/hal/stm32/dts
+     - /home/nazanin/zephyrproject/zephyr/include
+     - /home/nazanin/zephyrproject/zephyr/include/zephyr
+     - /home/nazanin/zephyrproject/zephyr/dts/common
+     - /home/nazanin/zephyrproject/zephyr/dts/x86
+     - /home/nazanin/zephyrproject/zephyr/dts/xtensa
+     - /home/nazanin/zephyrproject/zephyr/dts/sparc
+     - /home/nazanin/zephyrproject/zephyr/dts/riscv
+     - /home/nazanin/zephyrproject/zephyr/dts/posix
+     - /home/nazanin/zephyrproject/zephyr/dts/nios2
+     - /home/nazanin/zephyrproject/zephyr/dts/arm64
+     - /home/nazanin/zephyrproject/zephyr/dts/arm
+     - /home/nazanin/zephyrproject/zephyr/dts/arc
+     - /home/nazanin/zephyrproject/zephyr/dts
+    user-files:
+     - /home/nazanin/zephyrproject/my_project/First_project/nucleo_f401re.overlay
+  kconfig:
+    files:
+     - /home/nazanin/zephyrproject/zephyr/boards/st/nucleo_f401re/nucleo_f401re_defconfig
+     - /home/nazanin/zephyrproject/my_project/First_project/prj.conf
+    user-files:
+     - /home/nazanin/zephyrproject/my_project/First_project/prj.conf
+  toolchain:
+    name: zephyr
+    path: /home/nazanin/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.1.0-rc1
+    zephyr-base: /home/nazanin/zephyrproject/zephyr
+version: 0.1.0
+west:
+  command: /home/nazanin/zephyrproject/.venv/bin/west build -p always -b nucleo_f401re /home/nazanin/zephyrproject/my_project/First_project
+  topdir: /home/nazanin/zephyrproject
+  version: 1.3.0

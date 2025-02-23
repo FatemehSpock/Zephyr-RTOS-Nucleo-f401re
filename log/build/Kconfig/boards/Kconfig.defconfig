@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "/home/nazanin/zephyrproject/zephyr/boards/st/nucleo_f401re/Kconfig.defconfig"

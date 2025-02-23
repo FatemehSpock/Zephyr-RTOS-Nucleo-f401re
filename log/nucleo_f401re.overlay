@@ -1,0 +1,4 @@
+&usart2 {
+    current-speed = <9600>;  // Change this to your desired baud rate
+};
+
